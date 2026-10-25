@@ -1,0 +1,19 @@
+fastapi
+uvicorn
+pydantic
+pydantic-settings
+requests
+sarvamai
+python-dotenv
+openai
+google-generativeai
+
+
+echo "# Agrivision" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github-personal:Rahul-Samedavar/Agrivision.git
+
+git push -u origin main

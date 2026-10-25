@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "FarmerApp",
+    "slug": "FarmerApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Agrivision uses the microphone to turn your farming questions into text."
+      }
+    },
+    "android": {
+      "permissions": [
+        "RECORD_AUDIO"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.supernova15.farmerapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "11be7747-0670-49c6-811a-ff7588d9d2c9"
+      }
+    },
+    "owner": "supernova15"
+  }
+}

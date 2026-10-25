@@ -1,0 +1,82 @@
+{
+  "home": {
+    "welcome": "Welcome",
+    "subtitle": "AGRIVISION HOME",
+    "greeting": "Hello, Farmer,",
+    "overview": "Here is your regional overview.",
+    "detectDisease": "Disease Detection",
+    "diseaseDesc": "Scan crops instantly",
+    "labs": "Soil Labs",
+    "labsDesc": "Find nearby labs",
+    "news": "News",
+    "newsDesc": "Daily farming updates",
+    "schemes": "Government Schemes",
+    "schemesDesc": "Browse subsidies",
+    "assistant": "Farming Assistant",
+    "assistantTag": "HELP AT YOUR FINGERTIPS",
+    "openChatbot": "Open Chatbot"
+  },
+  "chat": {
+    "placeholder": "Ask about crops, pests...",
+    "startRecording": "Start voice input",
+    "stopRecording": "Stop voice input",
+    "microphonePermissionTitle": "Microphone permission needed",
+    "microphonePermissionMessage": "Allow microphone access to ask your farming question by voice.",
+    "voiceErrorTitle": "Voice input unavailable",
+    "voiceErrorMessage": "We could not process the recording. Please try again.",
+    "voiceBackendMessage": "Voice recognition is not configured on the server yet. Please contact the app administrator.",
+    "voiceNativeMessage": "This app build does not include speech recognition. Install the native development build instead of Expo Go."
+  },
+  "soilLabs": {
+    "title": "Soil Labs",
+    "subtitle": "PROXIMITY SERVICES",
+    "description": "Discover top-tier agricultural research and testing facilities equipped for specialized crop analysis.",
+    "placeholder": "Enter location",
+    "loading": "Fetching labs...",
+    "government": "Government Facilities",
+    "private": "Private Facilities",
+    "noResults": "No labs found for this location",
+    "verifiedGov": "VERIFIED GOV",
+    "address": "📍",
+    "phone": "📞",
+    "rating": "⭐",
+    "website": "Website",
+    "visitWebsite": "Visit portal",
+    "locationLabel": "Location",
+    "contactLabel": "Contact",
+    "close": "Close",
+    "errorTitle": "Error",
+    "enterLocation": "Please enter a location",
+    "fetchFail": "Failed to fetch soil labs. Please try again."
+  },
+  "language": {
+    "title": "Farming Assistant",
+    "subtitle": "Select your preferred language.",
+    "continue": "Continue"
+  },
+  "news": {
+    "header": "Local Insights",
+    "subheader": "Enter a location to get local news updates",
+    "placeholder": "Enter location",
+    "readMore": "Read more"
+  },
+  "scan": {
+    "title": "Disease Detection",
+    "subtitle": "Capture a clear photo of the affected plant area to begin the diagnostic analysis.",
+    "noImageSelected": "No Image Selected",
+    "imagePreviewHint": "Real-time preview will appear here",
+    "clickPhoto": "Click Photo",
+    "useCamera": "Use Device Camera",
+    "chooseGallery": "Choose from Gallery",
+    "uploadFile": "Upload Existing File",
+    "accurateDetection": "For accurate detection:",
+    "tip1": "Ensure the leaf is properly focused",
+    "tip2": "Capture the main symptom area",
+    "tip3": "Use good natural lighting",
+    "detectDisease": "Detect Disease",
+    "selectImageFirst": "Please select an image first",
+    "detectionFailed": "Failed to detect disease. Please try again.",
+    "noImage": "No Image",
+    "error": "Error"
+  }
+}

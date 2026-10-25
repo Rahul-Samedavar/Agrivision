@@ -1,0 +1,143 @@
+{
+  "info": {
+    "name": "AgriVision API",
+    "description": "Simple Postman collection for AgriVision backend APIs.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1) Soil Test Labs",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{bearer_token}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"place\": \"Belgaum\",\n  \"lang\": \"en\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/soil-test",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "soil-test"
+          ]
+        },
+        "description": "Returns private and government soil testing labs near a place."
+      }
+    },
+    {
+      "name": "2) Disease Detection & Cure",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{bearer_token}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"image\": \"<BASE64_IMAGE_STRING>\",\n  \"query\": \"My corn leaves and cob look infected. Suggest treatment.\",\n  \"lang\": \"en\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/disease-detect",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "disease-detect"
+          ]
+        },
+        "description": "Detects crop disease from image and returns analysis + recommended products."
+      }
+    },
+    {
+      "name": "3) Chatbot",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{bearer_token}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"query\": \"Is natural nutrition better than chemical nutrition for paddy?\",\n  \"lang\": \"en\",\n  \"image\": null\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/chatbot",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "chatbot"
+          ]
+        },
+        "description": "General farming Q&A. Optional image can be sent as base64 string."
+      }
+    },
+    {
+      "name": "4) News Updates",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{bearer_token}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"place\": \"Belgaum\",\n  \"lang\": \"en\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/news",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "news"
+          ]
+        },
+        "description": "Returns agriculture-related local news for the given place."
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://127.0.0.1:8000"
+    },
+    {
+      "key": "bearer_token",
+      "value": "change-me"
+    }
+  ]
+}
